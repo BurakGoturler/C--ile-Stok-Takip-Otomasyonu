@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9555A0A0-A9E4-4B89-B88E-BF97D2C70C93}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>stok_takip_01_08_2022</RootNamespace>
+    <AssemblyName>stok_takip_01_08_2022</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.30.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data.EntityFramework, Version=8.0.30.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Web, Version=8.0.30.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KayıtlıYöneticiler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KayıtlıYöneticiler.Designer.cs">
+      <DependentUpon>KayıtlıYöneticiler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KullanıcıKayıtları.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KullanıcıKayıtları.Designer.cs">
+      <DependentUpon>KullanıcıKayıtları.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KullanıcıSil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KullanıcıSil.Designer.cs">
+      <DependentUpon>KullanıcıSil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonelGiris.Designer.cs">
+      <DependentUpon>PersonelGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GirisSecimEkranı.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GirisSecimEkranı.Designer.cs">
+      <DependentUpon>GirisSecimEkranı.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MevcutStokDurumu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MevcutStokDurumu.Designer.cs">
+      <DependentUpon>MevcutStokDurumu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelKaydı.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonelKaydı.Designer.cs">
+      <DependentUpon>PersonelKaydı.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelSifreDegistir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonelSifreDegistir.Designer.cs">
+      <DependentUpon>PersonelSifreDegistir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="YeniÜrünEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YeniÜrünEkle.Designer.cs">
+      <DependentUpon>YeniÜrünEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YöneticiGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YöneticiGiris.Designer.cs">
+      <DependentUpon>YöneticiGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YöneticiKaydi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YöneticiKaydi.Designer.cs">
+      <DependentUpon>YöneticiKaydi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YöneticiSifreDegistir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YöneticiSifreDegistir.Designer.cs">
+      <DependentUpon>YöneticiSifreDegistir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YöneticiSil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YöneticiSil.Designer.cs">
+      <DependentUpon>YöneticiSil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ÜrünDetaylarınıGüncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ÜrünDetaylarınıGüncelle.Designer.cs">
+      <DependentUpon>ÜrünDetaylarınıGüncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ÜrünGüncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ÜrünGüncelle.Designer.cs">
+      <DependentUpon>ÜrünGüncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ÜrünSil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ÜrünSil.Designer.cs">
+      <DependentUpon>ÜrünSil.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GirisSecimEkranı.ccp-Cakm-IN.resx">
+      <DependentUpon>GirisSecimEkranı.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KayıtlıYöneticiler.resx">
+      <DependentUpon>KayıtlıYöneticiler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KullanıcıKayıtları.resx">
+      <DependentUpon>KullanıcıKayıtları.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KullanıcıSil.resx">
+      <DependentUpon>KullanıcıSil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonelGiris.resx">
+      <DependentUpon>PersonelGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GirisSecimEkranı.resx">
+      <DependentUpon>GirisSecimEkranı.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MevcutStokDurumu.resx">
+      <DependentUpon>MevcutStokDurumu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonelKaydı.resx">
+      <DependentUpon>PersonelKaydı.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonelSifreDegistir.resx">
+      <DependentUpon>PersonelSifreDegistir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="YeniÜrünEkle.resx">
+      <DependentUpon>YeniÜrünEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YöneticiGiris.resx">
+      <DependentUpon>YöneticiGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YöneticiKaydi.resx">
+      <DependentUpon>YöneticiKaydi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YöneticiSifreDegistir.resx">
+      <DependentUpon>YöneticiSifreDegistir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YöneticiSil.resx">
+      <DependentUpon>YöneticiSil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ÜrünDetaylarınıGüncelle.resx">
+      <DependentUpon>ÜrünDetaylarınıGüncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ÜrünGüncelle.resx">
+      <DependentUpon>ÜrünGüncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ÜrünSil.resx">
+      <DependentUpon>ÜrünSil.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconsmind-Outline-Address-Book.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons8-Ios7-User-Interface-Password.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconsmind-Outline-Add-User.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconsmind-Outline-Financial.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconsmind-Outline-Home-2-2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconsmind-Outline-Folder-Trash.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconsmind-Outline-Folder-Settings.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconsmind-Outline-Folder-Search.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconsmind-Outline-Folder-Refresh.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconsmind-Outline-Folder-Upload.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconsmind-Outline-Remove-User.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

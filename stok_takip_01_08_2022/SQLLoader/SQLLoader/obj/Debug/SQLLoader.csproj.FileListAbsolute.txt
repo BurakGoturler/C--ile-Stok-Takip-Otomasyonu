@@ -1,0 +1,6 @@
+D:\Burak\stajProje\stok_takip_01_08_2022\SQLLoader\SQLLoader\bin\Debug\SQLLoader.dll
+D:\Burak\stajProje\stok_takip_01_08_2022\SQLLoader\SQLLoader\bin\Debug\SQLLoader.pdb
+D:\Burak\stajProje\stok_takip_01_08_2022\SQLLoader\SQLLoader\obj\Debug\SQLLoader.csproj.AssemblyReference.cache
+D:\Burak\stajProje\stok_takip_01_08_2022\SQLLoader\SQLLoader\obj\Debug\SQLLoader.csproj.CoreCompileInputs.cache
+D:\Burak\stajProje\stok_takip_01_08_2022\SQLLoader\SQLLoader\obj\Debug\SQLLoader.dll
+D:\Burak\stajProje\stok_takip_01_08_2022\SQLLoader\SQLLoader\obj\Debug\SQLLoader.pdb
