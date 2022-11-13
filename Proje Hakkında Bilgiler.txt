@@ -1,0 +1,11 @@
+Yönetici Giriş Bilgisi
+kullanıcı adı: admin
+şifre: 1
+
+Personel Giriş Bilgisi
+kullanıcı adı: personel
+şifre: 1
+
+Proje açıldıktan sonra yukarıda bulunan Kullanıcı İşlemleri menüsünden diğer admin ve personeller hakkında kullanıcı adı ve şifre bilgilerini görebilirsiniz.
+
+Projemde MySQL veri tabanını kullandım.
